@@ -1,0 +1,57 @@
+class Vehiculo:
+    #Definimos el metodo constructor con sus atributos
+    def __init__(self, color, marca, modelo, anio):
+        self.color = color
+        self.marca = marca
+        self.modelo = modelo
+        self.anio = anio
+        self.velocidad = 0
+
+#Haremos una descripción del vehículo
+    def describir_vehiculo(self):
+        descripcion = f"El vehículo {self.marca} {self.modelo} {self.anio} color {self.color} está yendo a {self.velocidad}km/h."
+        return descripcion
+
+#Ponemos el metodo conducir
+    def conduicir(self, km):
+        if km > 0:
+            self.velocidad += km
+        else:
+            print("El kilometraje debe ser positivo")
+
+#Implementamos el metodo aumentar velocidad
+    def aumentar_velocidad(self, aumento_velocidad):
+        self.velocidad += aumento_velocidad
+        aumento = f"El vehículo {self.marca} {self.modelo} {self.anio} de color {self.color} aumentó su veloicidad y ahora está yendo a {self.velocidad}km/h"
+        return aumento
+
+# Implementamos el metodo reducir velocidad
+    def reducir_velocidad(self, reduciccion_velocidad):
+        self.velocidad -= reduciccion_velocidad
+        disminucion = f"El vehículo {self.marca} {self.modelo} {self.anio} de color {self.color} disminuyó su veloicidad y ahora está yendo a {self.velocidad}km/h"
+        return disminucion
+
+    def pintar_vehiculo(self, nuevo_color):
+        self.color = nuevo_color
+
+#Crear una nueva instancia de la clase vehículo
+mi_vehiculo = Vehiculo("Azul", "KIA", "C3", 2022)
+
+#Describir Vehículo
+print(mi_vehiculo.describir_vehiculo())
+
+#Conducir el vehículo a 80km/h
+mi_vehiculo.conduicir(80)
+print(mi_vehiculo.describir_vehiculo())
+
+#Aumentar la velocidad a 100km/h
+mi_vehiculo.aumentar_velocidad(20)
+print(mi_vehiculo.aumentar_velocidad(0))
+
+#Reducir la velocidad a 70 km/h
+mi_vehiculo.reducir_velocidad(30)
+print(mi_vehiculo.reducir_velocidad(0))
+
+#Pintar el vehículo de rojo
+mi_vehiculo.pintar_vehiculo("rojo")
+print(mi_vehiculo.describir_vehiculo())
