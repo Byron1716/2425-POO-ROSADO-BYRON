@@ -1,3 +1,4 @@
+#Comentario de prueba
 class Personaje:
 
     def __init__(self, nombre, fuerza, inteligencia, defensa, vida):
