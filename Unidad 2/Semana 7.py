@@ -41,7 +41,7 @@ def main():
     ConexionBaseDatos('Mi Base de Datos')
 
 
-if __name__ == "__main__": #Apliacmos el dunder name
+if __name__ == "__main__": ##Apliacmos el dunder name
     main()
 
 
