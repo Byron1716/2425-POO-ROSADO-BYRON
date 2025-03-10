@@ -1,0 +1,37 @@
+{
+    "001": {
+        "isbn": "001",
+        "titulo": "El Quijote de la Mancha",
+        "autor": "Miguel de Cervantes",
+        "categoria": "Novela",
+        "prestado": true
+    },
+    "002": {
+        "isbn": "002",
+        "titulo": "El Viaje mas largo",
+        "autor": "Nicholas Sparks",
+        "categoria": "Novela Rom\u00e1ntica",
+        "prestado": false
+    },
+    "003": {
+        "isbn": "003",
+        "titulo": "En el nombre del amor",
+        "autor": "Nicholas Sparks",
+        "categoria": "Novela Rom\u00e1ntica",
+        "prestado": false
+    },
+    "004": {
+        "isbn": "004",
+        "titulo": "Solo Amigos",
+        "autor": "Ana \u00c1lvarez",
+        "categoria": "Novela",
+        "prestado": false
+    },
+    "005": {
+        "isbn": "005",
+        "titulo": "Orgullo & Prejuicio",
+        "autor": "Jane Austen",
+        "categoria": "Ficci\u00f3n",
+        "prestado": false
+    }
+}
